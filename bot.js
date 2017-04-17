@@ -14,7 +14,7 @@ bot.on("message", msg => {
   let command = msg.content.toLowerCase().slice(prefix.length).split(" ");
 
   if (command[0] == "hey" || "hello") {
-    return msg.channel.sendMessage(`Hello @${msg.user}!`);
+    return msg.channel.sendMessage(`Hello @!${msg.author.id}!`);
   }
 }
 
