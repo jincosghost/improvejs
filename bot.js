@@ -10,6 +10,10 @@ bot.on("ready", () => {
 });
 
 bot.on("message", msg => {
+  // If the message comes from this or another bot, ignore it.
+  // this avoids bots getting stuck in a loop of triggering each other.
+  if (msg.author.bot || msg.author === bot.user) return;
+
   let command = msg.content.toLowerCase().slice(prefix.length).split(" ");
 
   if (command[0] == "hey" || command[0] == "hello") {
