@@ -2,9 +2,7 @@ const Discord = require("discord.js");
 const settings = require("./settings.json");
 const secrets = require("./secret.json");
 
-var bot = new Discord.Client({
-  autorun: true
-});
+var bot = new Discord.Client();
 var prefix = settings.prefix;
 
 bot.on("ready", () => {
