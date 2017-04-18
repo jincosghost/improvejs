@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const settings = require("./settings.json");
+const secrets = require("./secret.json");
 
 var bot = new Discord.Client({
   autorun: true
@@ -18,4 +19,4 @@ bot.on("message", msg => {
   }
 });
 
-bot.login(settings.token);
+bot.login(secrets.token);

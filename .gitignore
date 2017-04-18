@@ -4,6 +4,8 @@
 node_modules/
 *.json
 !package.json
+!settings.json
+.vscode/
 *.log
 
 ###
