@@ -14,9 +14,9 @@ bot.on("message", msg => {
   // this avoids bots getting stuck in a loop of triggering each other.
   if (msg.author.bot || msg.author === bot.user) return;
 
-  let command = msg.content.toLowerCase().slice(prefix.length).split(" ");
+  let command = msg.content.toLowerCase().slice(prefix.length).split(" ")[0];
 
-  if (command[0] == "hey" || command[0] == "hello") {
+  if (command === "hey" || command === "hello") {
     return msg.channel.sendMessage(`Hello @!${msg.author.id}!`);
   }
 });
