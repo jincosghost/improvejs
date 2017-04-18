@@ -1,0 +1,22 @@
+{
+  "name": "improvebot",
+  "version": "0.0.1",
+  "description": "community made bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jincosghost/improvejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jincosghost/improvejs/issues"
+  },
+  "homepage": "https://github.com/jincosghost/improvejs#readme",
+  "dependencies": {
+    "discord.js": "^11.0.0"
+  }
+}
