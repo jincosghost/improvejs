@@ -21,4 +21,8 @@ bot.on("message", msg => {
   }
 });
 
+// warning and error handling
+bot.on('error', console.error);
+bot.on('warn', console.warn);
+
 bot.login(secrets.token);
